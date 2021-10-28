@@ -1,0 +1,21 @@
+// Creating a component in angular 
+
+// 1. Create a component
+// 2. Register it in a module
+// 3. Add an element in the htmk markup
+
+// Angular CLI command
+
+ng help
+
+ng generate component component_name
+ng g c component_name 
+
+// reusability / scalability / maintainable
+
+<uk>
+    <li>
+    
+    </li>
+</uk>
+

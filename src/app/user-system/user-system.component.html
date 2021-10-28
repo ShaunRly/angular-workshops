@@ -1,0 +1,27 @@
+<h1>Users</h1>
+
+<div class="input-group">
+    <input class = "form-control" type='text' [(ngModel)] = "name" placeholder="Username">
+    <span class = "input-group-addon"></span>
+    <input class = "form-control" type='number' [(ngModel)] = "age" placeholder="Age">
+    <span class = "input-group-addon"></span>
+    <input class = "form-control" type='text' [(ngModel)] = "email" placeholder="E-mail">
+    <span class = "input-group-addon"></span>
+</div>
+    <select name="singleSelect" [(ngModel)] = "gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Prefer Not to Say">Prefer Not To Say</option>
+    </select>
+<br/>
+<button class="btn btn-primary" (click)='addUser()'>Add User</button>
+<button class="btn btn-success" (click)='addRandomUser()'>Add Random User</button>
+
+<ul>
+    <li *ngFor="let user of userList; let i = index" [ngClass] = "{below18: user.age < 18, midage: user.age >= 18 && user.age < 65, oldage: user.age >= 65}">
+        {{i+1}} - {{user.name}} : {{user.age}} : {{user.email}} : {{user.gender}}
+    </li>
+</ul>
+
+
+

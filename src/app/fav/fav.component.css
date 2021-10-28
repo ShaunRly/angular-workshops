@@ -1,0 +1,22 @@
+.container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    flex:content;
+    padding: 0px 15px 15px 15px;
+    margin: 15px;
+}
+
+.button-container{
+    text-align: center;
+}
+
+.mode-button{
+    background-color: #463f3a;
+    border: none;
+    color: white;
+    font-size: 10em;
+}

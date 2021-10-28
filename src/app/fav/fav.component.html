@@ -1,0 +1,11 @@
+
+<div class=container>
+    <div class = box [ngStyle] = "{'background-color':bgColor1, 'color':ftColor1}" (mouseover)="swapBgAndTC()" >
+        <h1> Title 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ducimus omnis voluptates sed dolorum soluta id, dicta distinctio, ab provident atque delectus tempore quam blanditiis suscipit accusamus quos temporibus quaerat.</p>
+    </div>
+</div>
+
+<div class = button-container>
+    <button class=modeSwitch (click)="swapColors()"> Switch Button <span> {{colorSwitch}} </span></button>
+</div>
